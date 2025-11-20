@@ -52,19 +52,7 @@ public class MainServlet extends HttpServlet{
 			e.printStackTrace();
 		}
 		
-	
-		
-		try {
-			
-			
-			
-		} catch (Exception e) {
-			e.printStackTrace()
-		}
 
-		
-		
-		
 		
 	}
 
