@@ -22,7 +22,7 @@ public class MainServlet extends HttpServlet{
 	
 	// -> Servlet(Java 코드 <-> DB)에서 추가한(DB에서 조회한) 데이터를 
 	// 메인페이지에서부터 사용할 수 있게 하기 위해
-	
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
@@ -46,15 +46,13 @@ public class MainServlet extends HttpServlet{
 			
 			// 메인페이지 응답을 담당하는 JSP에 요청 위임
 			req.getRequestDispatcher("/WEB-INF/views/main.jsp").forward(req, resp);
-			
-			
+						
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-
-		
 	}
 
+	
 	
 }
