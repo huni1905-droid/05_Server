@@ -23,10 +23,10 @@ public class TodoAddServlet extends HttpServlet{
 			TodoListService service = new TodoListServiceImpl();
 			
 			// 2. 요청 시 전달받은 파라미터의 데이터 얻어오기
-			String title = req.getParameter("title");		 // 제목
-			String detail = req.getParameter("detail");// 상세내용
+			String title = req.getParameter("title");	// 제목
+			String detail = req.getParameter("detail");	// 상세내용
 			
-			// 3. 서비스 호풀 후 별과 반환받기
+			// 3. 서비스 호풀 후 결과 반환받기
 			int result = service.todoAdd(title, detail);
 			
 			// 4. 성공/실패 메세지 세팅하기
@@ -45,14 +45,21 @@ public class TodoAddServlet extends HttpServlet{
 			// -> "/" 처리하는 Servlet/JSP 재요청
 			// -> redirect는 무조건 GET 방식!
 			
-			
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	
 	}
+
+	
 	
 	
 	
 }
+	
+	
+	
+	
+	
+
