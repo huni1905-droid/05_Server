@@ -9,26 +9,24 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/coffee") // 반드시 소괄호쓰고 그 안에 매핑될 주소 작성해줄것!!!
+@WebServlet("/coffee")
 public class ExampleController3 extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
-											throws ServletException, IOException {
-
-		String orderer = req.getParameter("orderer");
-		String coffee = req.getParameter("coffee");
-		String type = req.getParameter("type");
+							throws ServletException, IOException {
 		
-		String option = req.getParameter("opt"); // 첫번째 값만 반환
+		String orderer = req.getParameter("orderer");
+		String coffee  = req.getParameter("coffee");
+		String type    = req.getParameter("type");
+		
+		String option = req.getParameter("opt");
 		String[] optionArr = req.getParameterValues("opt");
 		// req.getParameter("name속성값") 
 		// : 같은 name 속성을 가진 여러개 값 중 첫번째 값만 반환
 		
-		// req.getParameterValues("name속성값");
+		// req.getParameterValues("name속성값")
 		// : 같은 name 속성을 가진 모든 값을 배열(String[])로 반환
-		
-		
 		
 		System.out.println(orderer);
 		System.out.println(coffee);
@@ -43,14 +41,12 @@ public class ExampleController3 extends HttpServlet{
 			}
 		}
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEP-INF/views/result2.jsp");
-	
+		RequestDispatcher dispatcher 
+			= req.getRequestDispatcher("/WEB-INF/views/result2.jsp");
+		
 		dispatcher.forward(req, resp);
 		
-		// 이 이후부터 동영상보고 다시 작성할것!!!------------------------------------------------
+		
 	}
-	
-	
-	
 	
 }

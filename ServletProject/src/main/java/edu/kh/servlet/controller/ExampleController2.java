@@ -17,7 +17,7 @@ import jakarta.servlet.http.HttpServletResponse;
 /* 어노테이션 : 컴파일러가 읽는 주석(@로 시작)
  * 
  * @WebServlet 어노테이션
- * -> 해당 클래스를 Serlet으로 등록하고 () 안에 작성된 주소와
+ * -> 해당 클래스를 Servlet으로 등록하고 () 안에 작성된 주소와
  * 매핑하라고(연결하라고) 지시하는 어노테이션
  * 
  * -> 서버 실행 시 자동으로 web.xml

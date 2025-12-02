@@ -8,7 +8,7 @@
   <display-name>ServletProject</display-name>
 
   <!-- 메인페이지로 사용할 파일명 목록 (webapp 폴더에 파일을 생성해야함) 
-  	<welcome-file>에 있는 이중에 하나라도 webapp 폴더에 있으면 그것을 메인페이지로 삼는다-->
+  	<welcome-file>에 있는것 이중에 하나라도 webapp 폴더에 있으면 그것을 메인페이지로 삼는다-->
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
